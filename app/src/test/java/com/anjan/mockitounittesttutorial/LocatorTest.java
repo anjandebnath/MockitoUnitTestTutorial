@@ -49,6 +49,9 @@ public class LocatorTest {
     @Mock
     private LocatorService locatorServiceMock;
 
+
+    
+
     // 1. Using the static mock() method.
     @Test
     public void testUsingMockMethod(){
