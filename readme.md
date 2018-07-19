@@ -20,7 +20,7 @@ and find `Junit4 Test Class`.
 
 
 - Now its time to create a custom template for unit test
-- Just copy and paste this get some pre defined imports and methods
+- Just copy and paste this and get some pre defined imports and methods.
 
 ````
 import org.junit.After;
