@@ -16,6 +16,8 @@ From Android studio go to In the top menu, got to `file > Settings`
 and in the settings. In the left menu, find `Editor > File and Code templates` and click on the `Code Tab` 
 and find `Junit4 Test Class`.
 
+![see here](https://github.com/anjandebnath/MockitoUnitTestTutorial/blob/master/AS.PNG)
+
 
 Thanks
 
