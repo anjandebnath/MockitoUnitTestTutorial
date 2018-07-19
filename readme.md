@@ -22,54 +22,55 @@ and find `Junit4 Test Class`.
 - Now its time to create a custom template for unit test
 - Just copy and paste this get some pre defined imports and methods
 
+````
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 
-    import org.junit.After;
-    import org.junit.AfterClass;
-    import org.junit.Before;
-    import org.junit.BeforeClass;
-    import org.junit.Test;
-    import org.junit.runner.RunWith;
-    
-    import org.mockito.junit.MockitoJUnitRunner;
-    import static org.mockito.Mock.*;
-    import static org.mockito.Mockito.*;
-    import static org.hamcrest.CoreMatchers.*;
-    import static org.junit.Assert.*;
-    import static org.mockito.ArgumentCaptor.*;
-    import static org.mockito.ArgumentMatchers.*;
-    
-    
-    #parse("File Header.java")
-    @RunWith(MockitoJUnitRunner.class)
-    public class ${NAME} {
-    
-      //region constants
-      
-      //endregion constants
-      
-      //region helper fields
-      
-      //endregion helper fields
-    
-      ${CLASS_NAME} SUT;
-    
-      @Before
-      public void setup() throws Exception{
-          
-         SUT = new ${CLASS_NAME} ();
-         ${BODY}
-      }
-      
-      //region helper methods
-      
-      //endregion helper methods
-      
-      //region helper classes
-      
-      //endregion helper classes
-      
-    }
+import org.mockito.junit.MockitoJUnitRunner;
+import static org.mockito.Mock.*;
+import static org.mockito.Mockito.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
+import static org.mockito.ArgumentCaptor.*;
+import static org.mockito.ArgumentMatchers.*;
 
+
+
+#parse("File Header.java")
+@RunWith(MockitoJUnitRunner.class)
+public class ${NAME} {
+
+  //region constants
+  
+  //endregion constants
+  
+  //region helper fields
+  
+  //endregion helper fields
+
+  ${CLASS_NAME} SUT;
+
+  @Before
+  public void setup() throws Exception{
+      
+     SUT = new ${CLASS_NAME} ();
+     ${BODY}
+  }
+  
+  //region helper methods
+  
+  //endregion helper methods
+  
+  //region helper classes
+  
+  //endregion helper classes
+  
+}
+````
 
 Thanks
 
