@@ -7,6 +7,11 @@ import com.anjan.mockitounittesttutorial.sync.eventbus.LoggedInEvent;
 import com.anjan.mockitounittesttutorial.sync.networking.LoginHttpEndpointSync;
 import com.anjan.mockitounittesttutorial.sync.networking.NetworkErrorException;
 
+/**
+ * Created by Anjan Debnath on 7/23/2018.
+ * Copyright (c) 2018, W3 Engineers Ltd. All rights reserved.
+ */
+
 public class LoginUseCaseSync {
 
     public enum UseCaseResult {
@@ -15,6 +20,9 @@ public class LoginUseCaseSync {
         NETWORK_ERROR
     }
 
+    /**
+     * Collaborators
+     */
     private final LoginHttpEndpointSync mLoginHttpEndpointSync;
     private final AuthTokenCache mAuthTokenCache;
     private final EventBusPoster mEventBusPoster;
