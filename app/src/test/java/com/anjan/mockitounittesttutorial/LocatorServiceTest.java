@@ -39,6 +39,7 @@ public class LocatorServiceTest {
 
         SUT = new LocatorService();
 
+
     }
 
     //region helper methods
