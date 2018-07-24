@@ -41,8 +41,12 @@ public class LocatorTest1 {
 
     }
 
+    /**
+     * we will use Argument Captor to verify mock object
+     * assert must be called after any verify
+     */
     @Test
-    public void locator_passValueToLocatorService_success() {
+    public void locator_passPositiveValueToLocatorService_successReturned() {
         ArgumentCaptor<Point> pointAc = ArgumentCaptor.forClass(Point.class);
         SUT.locate(POINT_X, POINT_Y);
         verify(locatorServiceMock).geoLocate(pointAc.capture());
@@ -51,6 +55,18 @@ public class LocatorTest1 {
         assertThat(point.getY(), is(equalTo(POINT_Y)));
     }
 
+    @Test
+    public void locator_passNegativeValue_returnSuccess() {
+
+        Point point =  SUT.locate(-1, -1);
+        assertThat(point.getX(), is(POINT_X));
+    }
+
+    /**
+     * when the test class's method return any result
+     * that is dependent to the mock object then that
+     * mock object should be stubbed.
+     */
     @Test
     public void locator_positiveValue_returnPointSuccess() {
 
