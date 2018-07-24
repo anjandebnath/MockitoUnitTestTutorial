@@ -153,6 +153,8 @@ public class LoginUseCaseSyncTest {
                 .when(mLoginHttpEndpointSyncMock).loginSync(any(String.class), any(String.class));
     }
 
+
+    //STUB
     private void successEndPintResult() throws NetworkErrorException {
         when(mLoginHttpEndpointSyncMock.loginSync(any(String.class), any(String.class)))
                 .thenReturn(new LoginHttpEndpointSync.EndpointResult(LoginHttpEndpointSync.EndpointResultStatus.SUCCESS, AUTH_TOKEN));
