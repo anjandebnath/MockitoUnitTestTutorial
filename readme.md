@@ -1,9 +1,12 @@
 #Unit test with Mockito
 
 *Ackwoledgement* : This Project is created for getting familiar with Mockito JUnit test. 
- This repository is created from following links:
+ This repository is created by taking reference from following links:
 
 - https://automationrhapsody.com/mock-junit-tests-mockito-example/
+- https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-and-junit
+- https://hackernoon.com/objects-vs-data-structures-e380b962c1d2
+- https://stackoverflow.com/questions/36253040/example-on-mockitos-argumentcaptor
 - https://javacodehouse.com/blog/junit-tutorial/
 - http://www.baeldung.com/mockito-annotations
 - https://javacodehouse.com/blog/mockito-tutorial/
