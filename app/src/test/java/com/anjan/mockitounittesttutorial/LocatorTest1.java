@@ -41,10 +41,12 @@ public class LocatorTest1 {
 
     }
 
+    //region readme
     /**
-     * we will use Argument Captor to verify mock object
-     * assert must be called after any verify
+     * we will use Argument Captor AC to verify mock object.
+     * Assert must be called after any verify with AC.
      */
+    //endregion readme
     @Test
     public void locator_passPositiveValueToLocatorService_successReturned() {
         ArgumentCaptor<Point> pointAc = ArgumentCaptor.forClass(Point.class);
@@ -62,11 +64,14 @@ public class LocatorTest1 {
         assertThat(point.getX(), is(POINT_X));
     }
 
+
+    //region readme
     /**
      * when the test class's method return any result
      * that is dependent to the mock object then that
      * mock object should be stubbed.
      */
+    //endregion readme
     @Test
     public void locator_positiveValue_returnPointSuccess() {
 
