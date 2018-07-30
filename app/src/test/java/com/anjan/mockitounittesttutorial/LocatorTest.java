@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
  * Copyright (c) 2018, W3 Engineers Ltd. All rights reserved.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class LocatorTest1 {
+public class LocatorTest {
 
     //region constants
     public static final int POINT_X = 1;
@@ -48,7 +48,7 @@ public class LocatorTest1 {
      */
     //endregion readme
     @Test
-    public void locator_passPositiveValueToLocatorService_successReturned() {
+    public void locator_passPositiveValueToLocatorService_success() {
         ArgumentCaptor<Point> pointAc = ArgumentCaptor.forClass(Point.class);
         SUT.locate(POINT_X, POINT_Y);
         verify(locatorServiceMock).geoLocate(pointAc.capture());
@@ -58,7 +58,7 @@ public class LocatorTest1 {
     }
 
     @Test
-    public void locator_passNegativeValue_returnSuccess() {
+    public void locator_passNegativeValue_positiveReturn() {
 
         Point point =  SUT.locate(-1, -1);
         assertThat(point.getX(), is(POINT_X));
