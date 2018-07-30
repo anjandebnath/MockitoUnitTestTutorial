@@ -7,6 +7,9 @@ package com.anjan.mockitounittesttutorial.stub;
 
 public class DbManager {
 
+    public static final String FIRST_NAME = "Customer";
+    public static final String LAST_NAME = "Name";
+
     /**
      * Object
      * Expose behaviours
@@ -25,6 +28,9 @@ public class DbManager {
              * and from that fetched value we will get the
              * customer.
              */
+            customer.setId(customerId);
+            customer.setFirstName(FIRST_NAME);
+            customer.setLastName(LAST_NAME);
         }
         return customer;
     }

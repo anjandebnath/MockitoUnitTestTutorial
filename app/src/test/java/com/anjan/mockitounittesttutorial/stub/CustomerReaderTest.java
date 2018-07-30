@@ -23,6 +23,8 @@ public class CustomerReaderTest {
     //region constants
     private static final long CUSTOMER_ID = 1L;
     private static final String CUSTOMER_NAME = "customer Name";
+    public static final String FIRST_NAME = "Customer";
+    public static final String LAST_NAME = "Name";
     //endregion constants
 
     //region helper fields
@@ -44,8 +46,8 @@ public class CustomerReaderTest {
 
         //arrange
         Customer customer = new Customer();
-        customer.setFirstName("customer");
-        customer.setLastName("Name");
+        customer.setFirstName(FIRST_NAME);
+        customer.setLastName(LAST_NAME);
         // STUB
         when(dbManagerMock.findCustomer(CUSTOMER_ID)).thenReturn(customer);
         //action
