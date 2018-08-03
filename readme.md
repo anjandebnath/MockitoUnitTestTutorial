@@ -75,6 +75,22 @@ public class ${NAME} {
 }
 ````
 
+
+### From where you start?
+
+you will find the slides [here](https://github.com/anjandebnath/MockitoUnitTestTutorial/tree/master/slides)
+
+This will give you the basic idea about unit test.
+
+start exploring the code from this sequence
+
+under `test` package
+- LocatorTest
+- stub-> CustomerReaderTest
+- mock-> LateInvoiceNotifierTest
+- sync-> LoginUseCaseSyncTest
+- async-> DummyCallerTest
+
 Thanks
 
 Anjan Debnath
