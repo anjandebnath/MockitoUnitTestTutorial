@@ -48,7 +48,6 @@ public class CustomerReaderTest {
         Customer customer = new Customer();
         customer.setFirstName(FIRST_NAME);
         customer.setLastName(LAST_NAME);
-        // STUB
         when(dbManagerMock.findCustomer(CUSTOMER_ID)).thenReturn(customer);
         //action
         String name = SUT.findName(CUSTOMER_ID);
