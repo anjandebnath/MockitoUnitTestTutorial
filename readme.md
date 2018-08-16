@@ -80,6 +80,8 @@ public class ${NAME} {
 
 you will find the slides [here](https://github.com/anjandebnath/MockitoUnitTestTutorial/tree/master/slides)
 
+Find the documentation [here](https://github.com/anjandebnath/MockitoUnitTestTutorial/tree/master/assets)
+
 This will give you the basic idea about unit test.
 
 start exploring the code from this sequence
