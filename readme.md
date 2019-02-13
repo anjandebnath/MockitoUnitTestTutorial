@@ -2,6 +2,9 @@
 
 *Ackwoledgement* : This Project is created for getting familiar with Mockito JUnit test. 
  This repository is created by taking reference from following links:
+ 
+ - https://junit.org/junit5/docs/current/user-guide/
+ 
 
 - https://automationrhapsody.com/mock-junit-tests-mockito-example/
 - https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-and-junit
@@ -11,6 +14,8 @@
 - http://www.baeldung.com/mockito-annotations
 - https://javacodehouse.com/blog/mockito-tutorial/
 
+
+`To create Test Class in Android Studio Ctrl+Shift+T or Navigate->Test.`
 
 
 ## Custom template create for Junit4

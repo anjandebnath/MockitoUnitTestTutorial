@@ -20,4 +20,8 @@ public class Locator {
             return locatorService.geoLocate(new Point(x, y));
         }
     }
+
+    public int add(int a, int b) {
+        return a + b;
+    }
 }

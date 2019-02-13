@@ -49,7 +49,7 @@ public class LateInvoiceNotifierTest {
         SUT = new LateInvoiceNotifier(mEmailSenderMock, mInvoiceStorageMock, mEventRecorderMock);
 
         //set once and used by all methods
-        sampleCustomer = new Customer();
+        sampleCustomer = new Customer("Harie", "Kane");
         sampleCustomer.setFirstName("Harie");
         sampleCustomer.setLastName("Kane");
 
