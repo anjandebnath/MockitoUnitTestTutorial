@@ -6,6 +6,7 @@
  - https://junit.org/junit5/docs/current/user-guide/
  - https://www.baeldung.com/tag/junit-5/
  - https://github.com/eugenp/tutorials/tree/master/testing-modules/junit-5
+ - https://dzone.com/articles/junit-5-dynamic-tests-generate-tests-at-run-time
 
 `To create Test Class in Android Studio Ctrl+Shift+T or Navigate->Test.`
 
