@@ -1,5 +1,6 @@
 package com.anjan.mockitounittesttutorial.contributor;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +33,7 @@ public class ContributorActivity extends AppCompatActivity {
     }
     public void methodCreatedByContributor(){
 
-        Log.d("Owner", "This method has created by contributor");
+        Log.d("Owner", "This method has created by contributor machine");
 
     }
 }
