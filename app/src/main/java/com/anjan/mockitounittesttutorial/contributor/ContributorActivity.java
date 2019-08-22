@@ -25,9 +25,15 @@ public class ContributorActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    public void methodCreatedByOwner(){
+
+    public void methodCreatedByOwner() {
 
         Log.d("Owner", "This method has created by owner");
+    }
+    public void methodCreatedByContributor(){
+
+        Log.d("Owner", "This method has created by contributor");
+
     }
 }
 
