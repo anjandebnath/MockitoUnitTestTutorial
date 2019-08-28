@@ -9,6 +9,8 @@ package com.anjan.mockitounittesttutorial;
 public class Locator {
     private final LocatorService locatorService;
 
+    private static Cache cache = new Cache();
+
     public Locator(LocatorService locatorService) {
         this.locatorService = locatorService;
     }
@@ -20,4 +22,6 @@ public class Locator {
             return locatorService.geoLocate(new Point(x, y));
         }
     }
+
+
 }
