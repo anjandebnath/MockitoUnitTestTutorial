@@ -35,6 +35,8 @@ public class ContributorActivity extends AppCompatActivity {
 
         Log.d("Owner", "This method has created by contributor machine");
 
+        Log.d("Pull request", "change log test");
+
     }
 }
 

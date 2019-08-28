@@ -23,7 +23,9 @@ public class Locator {
         }
     }
 
+
     public static MessagingService getService(String serviceName) {
+
 
         MessagingService service = cache.getService(serviceName);
 
@@ -36,5 +38,16 @@ public class Locator {
                 .lookup(serviceName);
         cache.addService(service1);
         return service1;
+    }
+
+    private void LocationTracker(Point point){
+
+        MessagingService service
+                = ServiceLocator.getService("EmailService");
+        String email = service.getMessageBody();
+
+        MessagingService smsService
+                = ServiceLocator.getService("SMSService");
+        String sms = smsService.getMessageBody();
     }
 }
