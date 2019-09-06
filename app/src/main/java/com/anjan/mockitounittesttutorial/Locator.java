@@ -1,6 +1,7 @@
 package com.anjan.mockitounittesttutorial;
 
 
+import android.util.Log;
 
 /**
  * Created by Anjan Debnath on 5/22/2018.
@@ -49,5 +50,14 @@ public class Locator {
         MessagingService smsService
                 = ServiceLocator.getService("SMSService");
         String sms = smsService.getMessageBody();
+    }
+
+    private void fixIssueFive(){
+        Log.e("TAG", "Fix the issue no 5");
+
+        if(locatorService!= null){
+            Point p = new Point(22, 34);
+            locatorService.geoLocate(p);
+        }
     }
 }
