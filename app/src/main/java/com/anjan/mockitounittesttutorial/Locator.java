@@ -54,5 +54,10 @@ public class Locator {
 
     private void fixIssueFive(){
         Log.e("TAG", "Fix the issue no 5");
+
+        if(locatorService!= null){
+            Point p = new Point(22, 34);
+            locatorService.geoLocate(p);
+        }
     }
 }
