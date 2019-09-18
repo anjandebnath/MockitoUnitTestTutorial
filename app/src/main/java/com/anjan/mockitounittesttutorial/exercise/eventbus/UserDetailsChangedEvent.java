@@ -5,7 +5,7 @@ import com.anjan.mockitounittesttutorial.exercise.users.User;
 
 public class UserDetailsChangedEvent {
 
-    private final User mUser;
+    private User mUser;
 
     public UserDetailsChangedEvent(User user) {
         mUser = user;
@@ -15,5 +15,10 @@ public class UserDetailsChangedEvent {
 
     public User getUser() {
         return mUser;
+    }
+
+    public void setUser(User user){
+
+        this.mUser = user;
     }
 }
